@@ -1,0 +1,6 @@
+framework module Pods_RectiveTest {
+  umbrella header "Pods-RectiveTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
