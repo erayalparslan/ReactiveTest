@@ -61,14 +61,38 @@
 		00CD4EC621FCF34100548FCF /* RectiveTest */ = {
 			isa = PBXGroup;
 			children = (
-				00CD4EC721FCF34100548FCF /* AppDelegate.swift */,
-				00CD4EC921FCF34100548FCF /* ViewController.swift */,
-				00CD4ECB21FCF34100548FCF /* Main.storyboard */,
-				00CD4ECE21FCF34300548FCF /* Assets.xcassets */,
-				00CD4ED021FCF34300548FCF /* LaunchScreen.storyboard */,
 				00CD4ED321FCF34300548FCF /* Info.plist */,
+				00CD4EDC21FCFB4500548FCF /* Controller */,
+				00CD4EDB21FCFB3F00548FCF /* View */,
+				00CD4EDA21FCFB3300548FCF /* Model */,
 			);
 			path = RectiveTest;
+			sourceTree = "<group>";
+		};
+		00CD4EDA21FCFB3300548FCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4ECE21FCF34300548FCF /* Assets.xcassets */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00CD4EDB21FCFB3F00548FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4ED021FCF34300548FCF /* LaunchScreen.storyboard */,
+				00CD4ECB21FCF34100548FCF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00CD4EDC21FCFB4500548FCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4EC921FCF34100548FCF /* ViewController.swift */,
+				00CD4EC721FCF34100548FCF /* AppDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		1BBA9271DB074BF9B94AEA29 /* Pods */ = {
