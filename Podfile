@@ -10,6 +10,7 @@ target 'RectiveTest' do
     pod 'RxCocoa',    '~> 4.0'
     pod 'Alamofire'
     pod 'SwiftyJSON'
-    
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
 
 end

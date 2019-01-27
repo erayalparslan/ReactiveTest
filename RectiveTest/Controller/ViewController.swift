@@ -8,9 +8,9 @@
 
 import UIKit
 import RxSwift
-
-
-
+import RxCocoa
+import Alamofire
+import SwiftyJSON
 
 
 class ViewController: UIViewController {
@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mSearchBar: UISearchBar!
     
     
-    let movies = ["Harry Potter", "Star Wars",
-                  "Lord Of The Rings", "Forrest Gump"]
+    var movies = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +27,32 @@ class ViewController: UIViewController {
         
         
         
-        let numbers = Variable([1,2,3,4,5,6,7,8,9,10])
         
-        numbers.asObservable()
-            .throttle(5, scheduler: MainScheduler.instance)
+        mSearchBar.rx.text
+            .orEmpty
+            .distinctUntilChanged()
+            .filter{!$0.isEmpty}
+            .debounce(0.1, scheduler: MainScheduler.instance)
             .subscribe(onNext: {
-                element in
-                print(element)
+                query in
+                let url = API_URL + API_KEY + "&s=" + query
+                
+                Alamofire.request(url).responseJSON(completionHandler: { response in
+                    if let value = response.result.value {
+                        let json = JSON(value)
+                        
+                        self.movies.removeAll()
+                        
+                        for movie in json["Search"] {
+                            if let title = movie.1["Title"].string {
+                                self.movies.append(title)
+                            }
+                        }
+                    }
+                })
+                
+                self.mTableView.reloadData()
         })
-        numbers.value.append(600)
     }
 
 

@@ -12,6 +12,8 @@
 		00CD4ECD21FCF34100548FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4ECB21FCF34100548FCF /* Main.storyboard */; };
 		00CD4ECF21FCF34300548FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4ECE21FCF34300548FCF /* Assets.xcassets */; };
 		00CD4ED221FCF34300548FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4ED021FCF34300548FCF /* LaunchScreen.storyboard */; };
+		00CD4EE221FD86E100548FCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4EE121FD86E100548FCF /* Constants.swift */; };
+		00CD4EE421FD8B4100548FCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */; };
 		A15CC4117EFC8D6C3B51E424 /* Pods_RectiveTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16A2E9E11B2C7AE90077F75 /* Pods_RectiveTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		00CD4ECE21FCF34300548FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CD4ED121FCF34300548FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00CD4ED321FCF34300548FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CD4EE121FD86E100548FCF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7528DF9CF8806CC2C3A652F4 /* Pods-RectiveTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectiveTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B16A2E9E11B2C7AE90077F75 /* Pods_RectiveTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectiveTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9076E261D30CFE84FA7609E /* Pods-RectiveTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectiveTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		00CD4EC621FCF34100548FCF /* RectiveTest */ = {
 			isa = PBXGroup;
 			children = (
+				00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */,
 				00CD4ED321FCF34300548FCF /* Info.plist */,
 				00CD4EDC21FCFB4500548FCF /* Controller */,
 				00CD4EDB21FCFB3F00548FCF /* View */,
@@ -73,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				00CD4ECE21FCF34300548FCF /* Assets.xcassets */,
+				00CD4EE121FD86E100548FCF /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 				00CD4ED221FCF34300548FCF /* LaunchScreen.storyboard in Resources */,
 				00CD4ECF21FCF34300548FCF /* Assets.xcassets in Resources */,
 				00CD4ECD21FCF34100548FCF /* Main.storyboard in Resources */,
+				00CD4EE421FD8B4100548FCF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,20 +198,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -242,6 +255,7 @@
 			files = (
 				00CD4ECA21FCF34100548FCF /* ViewController.swift in Sources */,
 				00CD4EC821FCF34100548FCF /* AppDelegate.swift in Sources */,
+				00CD4EE221FD86E100548FCF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
