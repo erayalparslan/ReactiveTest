@@ -89,9 +89,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         let selectedMovie = movies[indexPath.row]
-        ref.child("favorites").childByAutoId().setValue(selectedMovie)
+        ref.child("favorites").childByAutoId().setValue(["movie_title" : selectedMovie])
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
     
 }
