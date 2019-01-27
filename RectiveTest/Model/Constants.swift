@@ -7,6 +7,12 @@
 //
 
 import Foundation
+import Firebase
 
 let API_URL = "https://www.omdbapi.com/?apikey="
 let API_KEY = "d9370be1"
+
+var ref: DatabaseReference!
+
+
+

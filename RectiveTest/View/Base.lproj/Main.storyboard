@@ -52,7 +52,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movies" id="uwv-6S-NR8"/>
+                    <navigationItem key="navigationItem" title="Movies" id="uwv-6S-NR8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="hZA-W6-cfv">
+                            <connections>
+                                <action selector="bookmarksDidTap:" destination="BYZ-38-t0r" id="XHt-4M-9qi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mSearchBar" destination="z79-EQ-Vgb" id="iry-ce-UUv"/>
                         <outlet property="mTableView" destination="Ps4-DU-AmU" id="Jz3-Em-BGB"/>
@@ -63,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1072.8" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites View Controller-->
         <scene sceneID="XJB-Ae-gnf">
             <objects>
-                <viewController id="uTT-XP-SVb" sceneMemberID="viewController">
+                <viewController id="uTT-XP-SVb" customClass="FavoritesViewController" customModule="RectiveTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VEr-E4-cQs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

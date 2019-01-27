@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import Alamofire
 import SwiftyJSON
-
+import Firebase
 
 class ViewController: UIViewController {
     @IBOutlet weak var mTableView: UITableView!
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setDelegates()
-        
+        ref = Database.database().reference()
         
         
         
@@ -56,10 +56,21 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func bookmarksDidTap(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "details", sender: nil)
+    }
+    
+    
+    
+    
+    
+    
     func setDelegates(){
         mTableView.delegate   = self
         mTableView.dataSource = self
     }
+    
+    
     
     
  
@@ -76,4 +87,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.textLabel?.text = movies[indexPath.row ]
         return cell!
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        let selectedMovie = movies[indexPath.row]
+        ref.child("favorites").childByAutoId().setValue(selectedMovie)
+    }
+    
 }

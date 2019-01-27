@@ -14,6 +14,7 @@
 		00CD4ED221FCF34300548FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4ED021FCF34300548FCF /* LaunchScreen.storyboard */; };
 		00CD4EE221FD86E100548FCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4EE121FD86E100548FCF /* Constants.swift */; };
 		00CD4EE421FD8B4100548FCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */; };
+		00D7CCBA21FD950D00040877 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D7CCB921FD950D00040877 /* FavoritesViewController.swift */; };
 		A15CC4117EFC8D6C3B51E424 /* Pods_RectiveTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16A2E9E11B2C7AE90077F75 /* Pods_RectiveTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		00CD4ED321FCF34300548FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00CD4EE121FD86E100548FCF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00D7CCB921FD950D00040877 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7528DF9CF8806CC2C3A652F4 /* Pods-RectiveTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectiveTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B16A2E9E11B2C7AE90077F75 /* Pods_RectiveTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectiveTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9076E261D30CFE84FA7609E /* Pods-RectiveTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectiveTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				00CD4EC921FCF34100548FCF /* ViewController.swift */,
 				00CD4EC721FCF34100548FCF /* AppDelegate.swift */,
+				00D7CCB921FD950D00040877 /* FavoritesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				00CD4ECA21FCF34100548FCF /* ViewController.swift in Sources */,
 				00CD4EC821FCF34100548FCF /* AppDelegate.swift in Sources */,
+				00D7CCBA21FD950D00040877 /* FavoritesViewController.swift in Sources */,
 				00CD4EE221FD86E100548FCF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
