@@ -15,8 +15,27 @@
 		00CD4EE221FD86E100548FCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4EE121FD86E100548FCF /* Constants.swift */; };
 		00CD4EE421FD8B4100548FCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */; };
 		00D7CCBA21FD950D00040877 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D7CCB921FD950D00040877 /* FavoritesViewController.swift */; };
+		00FFF4FB21FE3070005C21E4 /* RectiveTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF4FA21FE3070005C21E4 /* RectiveTestTests.swift */; };
+		00FFF50921FE32EB005C21E4 /* RectiveTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF50821FE32EB005C21E4 /* RectiveTestUITests.swift */; };
 		A15CC4117EFC8D6C3B51E424 /* Pods_RectiveTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16A2E9E11B2C7AE90077F75 /* Pods_RectiveTest.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00FFF4FD21FE3070005C21E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CD4EBC21FCF34100548FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CD4EC321FCF34100548FCF;
+			remoteInfo = RectiveTest;
+		};
+		00FFF50B21FE32EB005C21E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CD4EBC21FCF34100548FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CD4EC321FCF34100548FCF;
+			remoteInfo = RectiveTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00CD4EC421FCF34100548FCF /* RectiveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RectiveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +48,12 @@
 		00CD4EE121FD86E100548FCF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		00CD4EE321FD8B4000548FCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00D7CCB921FD950D00040877 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		00FFF4F821FE3070005C21E4 /* RectiveTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RectiveTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFF4FA21FE3070005C21E4 /* RectiveTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectiveTestTests.swift; sourceTree = "<group>"; };
+		00FFF4FC21FE3070005C21E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FFF50621FE32EB005C21E4 /* RectiveTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RectiveTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FFF50821FE32EB005C21E4 /* RectiveTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectiveTestUITests.swift; sourceTree = "<group>"; };
+		00FFF50A21FE32EB005C21E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7528DF9CF8806CC2C3A652F4 /* Pods-RectiveTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectiveTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B16A2E9E11B2C7AE90077F75 /* Pods_RectiveTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectiveTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9076E261D30CFE84FA7609E /* Pods-RectiveTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectiveTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RectiveTest/Pods-RectiveTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +68,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00FFF4F521FE3070005C21E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFF50321FE32EB005C21E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				00CD4EC621FCF34100548FCF /* RectiveTest */,
+				00FFF4F921FE3070005C21E4 /* RectiveTestTests */,
+				00FFF50721FE32EB005C21E4 /* RectiveTestUITests */,
 				00CD4EC521FCF34100548FCF /* Products */,
 				1BBA9271DB074BF9B94AEA29 /* Pods */,
 				6095CB990C350400BFCB15B6 /* Frameworks */,
@@ -60,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				00CD4EC421FCF34100548FCF /* RectiveTest.app */,
+				00FFF4F821FE3070005C21E4 /* RectiveTestTests.xctest */,
+				00FFF50621FE32EB005C21E4 /* RectiveTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +147,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		00FFF4F921FE3070005C21E4 /* RectiveTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				00FFF4FA21FE3070005C21E4 /* RectiveTestTests.swift */,
+				00FFF4FC21FE3070005C21E4 /* Info.plist */,
+			);
+			path = RectiveTestTests;
+			sourceTree = "<group>";
+		};
+		00FFF50721FE32EB005C21E4 /* RectiveTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00FFF50821FE32EB005C21E4 /* RectiveTestUITests.swift */,
+				00FFF50A21FE32EB005C21E4 /* Info.plist */,
+			);
+			path = RectiveTestUITests;
+			sourceTree = "<group>";
+		};
 		1BBA9271DB074BF9B94AEA29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +204,42 @@
 			productReference = 00CD4EC421FCF34100548FCF /* RectiveTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		00FFF4F721FE3070005C21E4 /* RectiveTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FFF50121FE3070005C21E4 /* Build configuration list for PBXNativeTarget "RectiveTestTests" */;
+			buildPhases = (
+				00FFF4F421FE3070005C21E4 /* Sources */,
+				00FFF4F521FE3070005C21E4 /* Frameworks */,
+				00FFF4F621FE3070005C21E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FFF4FE21FE3070005C21E4 /* PBXTargetDependency */,
+			);
+			name = RectiveTestTests;
+			productName = RectiveTestTests;
+			productReference = 00FFF4F821FE3070005C21E4 /* RectiveTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00FFF50521FE32EB005C21E4 /* RectiveTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FFF50D21FE32EB005C21E4 /* Build configuration list for PBXNativeTarget "RectiveTestUITests" */;
+			buildPhases = (
+				00FFF50221FE32EB005C21E4 /* Sources */,
+				00FFF50321FE32EB005C21E4 /* Frameworks */,
+				00FFF50421FE32EB005C21E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FFF50C21FE32EB005C21E4 /* PBXTargetDependency */,
+			);
+			name = RectiveTestUITests;
+			productName = RectiveTestUITests;
+			productReference = 00FFF50621FE32EB005C21E4 /* RectiveTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +252,14 @@
 				TargetAttributes = {
 					00CD4EC321FCF34100548FCF = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					00FFF4F721FE3070005C21E4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 00CD4EC321FCF34100548FCF;
+					};
+					00FFF50521FE32EB005C21E4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 00CD4EC321FCF34100548FCF;
 					};
 				};
 			};
@@ -172,6 +277,8 @@
 			projectRoot = "";
 			targets = (
 				00CD4EC321FCF34100548FCF /* RectiveTest */,
+				00FFF4F721FE3070005C21E4 /* RectiveTestTests */,
+				00FFF50521FE32EB005C21E4 /* RectiveTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +292,20 @@
 				00CD4ECF21FCF34300548FCF /* Assets.xcassets in Resources */,
 				00CD4ECD21FCF34100548FCF /* Main.storyboard in Resources */,
 				00CD4EE421FD8B4100548FCF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFF4F621FE3070005C21E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFF50421FE32EB005C21E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +384,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00FFF4F421FE3070005C21E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFF4FB21FE3070005C21E4 /* RectiveTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FFF50221FE32EB005C21E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FFF50921FE32EB005C21E4 /* RectiveTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00FFF4FE21FE3070005C21E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CD4EC321FCF34100548FCF /* RectiveTest */;
+			targetProxy = 00FFF4FD21FE3070005C21E4 /* PBXContainerItemProxy */;
+		};
+		00FFF50C21FE32EB005C21E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CD4EC321FCF34100548FCF /* RectiveTest */;
+			targetProxy = 00FFF50B21FE32EB005C21E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		00CD4ECB21FCF34100548FCF /* Main.storyboard */ = {
@@ -439,6 +589,84 @@
 			};
 			name = Release;
 		};
+		00FFF4FF21FE3070005C21E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN294VVZ35;
+				INFOPLIST_FILE = RectiveTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erayalparslan.RectiveTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RectiveTest.app/RectiveTest";
+			};
+			name = Debug;
+		};
+		00FFF50021FE3070005C21E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN294VVZ35;
+				INFOPLIST_FILE = RectiveTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erayalparslan.RectiveTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RectiveTest.app/RectiveTest";
+			};
+			name = Release;
+		};
+		00FFF50E21FE32EB005C21E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN294VVZ35;
+				INFOPLIST_FILE = RectiveTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erayalparslan.RectiveTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RectiveTest;
+			};
+			name = Debug;
+		};
+		00FFF50F21FE32EB005C21E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN294VVZ35;
+				INFOPLIST_FILE = RectiveTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erayalparslan.RectiveTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RectiveTest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,6 +684,24 @@
 			buildConfigurations = (
 				00CD4ED721FCF34300548FCF /* Debug */,
 				00CD4ED821FCF34300548FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FFF50121FE3070005C21E4 /* Build configuration list for PBXNativeTarget "RectiveTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FFF4FF21FE3070005C21E4 /* Debug */,
+				00FFF50021FE3070005C21E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FFF50D21FE32EB005C21E4 /* Build configuration list for PBXNativeTarget "RectiveTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FFF50E21FE32EB005C21E4 /* Debug */,
+				00FFF50F21FE32EB005C21E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
